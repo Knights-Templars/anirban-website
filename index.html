@@ -262,7 +262,7 @@
 <!-- =================Observations================= -->
 <section id="observations" class="max-w-6xl mx-auto px-6 md:px-10 py-20">
   <p class="eyebrow text-teal mb-4 reveal">OBSERVATIONS</p>
-  <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal">Data I've collected</h2>
+  <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal"> Observations and Data collections</h2>
  
   <div class="reveal">
     <!-- EDIT: square tabs — one per observatory. data-tab must match the panel's id suffix below -->
@@ -390,6 +390,24 @@
     navToggle.setAttribute('aria-expanded', String(isHidden));
   });
   navMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navMobile.classList.add('hidden')));
+
+  // Observations tabs
+  const obsTabs = document.querySelectorAll('.obs-tab-btn');
+  const activeClasses = ['bg-ink', 'text-paper', 'border-ink'];
+  const inactiveClasses = ['border-ink/15', 'text-ink/70'];
+  obsTabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      obsTabs.forEach(b => {
+        b.classList.remove(...activeClasses);
+        b.classList.add(...inactiveClasses);
+      });
+      btn.classList.remove(...inactiveClasses);
+      btn.classList.add(...activeClasses);
+ 
+      document.querySelectorAll('.obs-panel').forEach(p => p.classList.add('hidden'));
+      document.getElementById('obs-' + btn.dataset.tab).classList.remove('hidden');
+    });
+  });
 
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
