@@ -75,6 +75,7 @@
       <li><a href="#about" class="underline-grow hover:text-ink">ABOUT</a></li>
       <li><a href="#research" class="underline-grow hover:text-ink">RESEARCH</a></li>
       <li><a href="#publications" class="underline-grow hover:text-ink">PUBLICATIONS</a></li>
+      <li><a href="#observations" class="underline-grow hover:text-ink">OBSERVATIONS</a></li>
       <li><a href="#software" class="underline-grow hover:text-ink">SOFTWARE</a></li>
       <li><a href="#news" class="underline-grow hover:text-ink">NEWS</a></li>
       <li><a href="#contact" class="px-3 py-1.5 rounded-full border border-ink/25 text-ink hover:bg-ink hover:text-paper transition-colors">CONTACT</a></li>
@@ -85,6 +86,7 @@
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#research">RESEARCH</a></li>
       <li><a href="#publications">PUBLICATIONS</a></li>
+      <li><a href="#observations">OBSERVATIONS</a></li>
       <li><a href="#software">SOFTWARE</a></li>
       <li><a href="#news">NEWS</a></li>
       <li><a href="#contact">CONTACT</a></li>
@@ -137,6 +139,7 @@
   </svg>
 </div>
 
+<!-- =================Research Interests================= -->
 <section id="about" class="max-w-6xl mx-auto px-6 md:px-10 py-20 grid md:grid-cols-5 gap-12">
   <div class="md:col-span-2 reveal">
     <p class="eyebrow text-violet mb-4">ABOUT</p>
@@ -182,6 +185,7 @@
   </div>
 </section>
 
+<!-- =================Publications================= -->
 <section id="publications" class="max-w-6xl mx-auto px-6 md:px-10 py-20">
   <p class="eyebrow text-violet mb-4 reveal">PUBLICATIONS</p>
   <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal">Selected papers</h2>
@@ -255,6 +259,52 @@
   <a href="https://orcid.org/0000-0002-7708-3831" class="reveal inline-block mt-8 underline-grow text-sm font-medium text-ink">View full publication list →</a>
 </section>
 
+<!-- =================Observations================= -->
+<section id="observations" class="max-w-6xl mx-auto px-6 md:px-10 py-20">
+  <p class="eyebrow text-teal mb-4 reveal">OBSERVATIONS</p>
+  <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal">Data I've collected</h2>
+ 
+  <div class="reveal">
+    <!-- EDIT: square tabs — one per observatory. data-tab must match the panel's id suffix below -->
+    <div class="flex flex-wrap gap-3 mb-8" id="obsTabs">
+      <button data-tab="GIT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink transition-colors bg-ink text-paper"> 70 cm GIT</button>
+      <button data-tab="HCT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">2.0 m HCT</button>
+      <button data-tab="100C" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors"> 100C Altay </button>
+      <button data-tab="LOT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">1.0 m LOT </button>
+      <button data-tab="SLT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">40 cm SLT</button>
+    </div>
+ 
+    <!-- EDIT: panels — each just lists which data types you've collected there. Remove a badge if not applicable. -->
+    <div id="obs-git" class="obs-panel flex gap-2">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
+       <a href="https://sites.google.com/view/growthindia/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+ 
+    <div id="obs-hct" class="obs-panel flex gap-2 hidden">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Spectroscopy</span>
+      <a href="https://www.iiap.res.in/centers/iao/facilities/hct/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+ 
+    <div id="obs-100C" class="obs-panel flex gap-2 hidden">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Photometry</span>
+      <a href="#" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+ 
+    <div id="obs-LOT" class="obs-panel flex gap-2 hidden">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Photometry</span>
+      <a href="https://www.lulin.ncu.edu.tw" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+    <div id="obs-SLT" class="obs-panel flex gap-2 hidden">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Photometry</span>
+      <a href="https://www.lulin.ncu.edu.tw" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================Software================= -->
 <section id="software" class="bg-paper2 py-20">
   <div class="max-w-6xl mx-auto px-6 md:px-10">
     <p class="eyebrow text-amber mb-4 reveal">SOFTWARE</p>
@@ -280,6 +330,9 @@
   </div>
 </section>
 
+
+
+<!-- =================Recent Updates================= -->
 <section id="news" class="max-w-6xl mx-auto px-6 md:px-10 py-20">
   <p class="eyebrow text-teal mb-4 reveal">NEWS</p>
   <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal">Recent updates</h2>
