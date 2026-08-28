@@ -108,7 +108,7 @@
 
 <section class="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-20 grid md:grid-cols-5 gap-12 items-center">
   <div class="md:col-span-3 reveal">
-    <p class="eyebrow text-teal mb-5"> Astronomer </p>
+    <p class="eyebrow text-teal mb-5"> Transient Astronomy </p>
     <h1 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.08] text-ink font-medium">
       How stars explode? <br class="hidden md:block">
     </h1>
@@ -188,7 +188,11 @@
       </div>
       <div class="reveal border-t border-paper/20 pt-6">
         <h3 class="font-display text-xl mb-2"> Host or No Host?</h3>
-        <p class="text-sm text-paper/70 leading-relaxed">Host galaxies of superluminous supernovae</p>
+        <p class="text-sm text-paper/70 leading-relaxed">Host galaxies of superluminous supernovae. </p>
+      </div>
+      <div class="reveal border-t border-paper/20 pt-6">
+        <h3 class="font-display text-xl mb-2"> Gamma Rays from supernovae</h3>
+        <p class="text-sm text-paper/70 leading-relaxed">COSI gamma-ray spectra of supernovae. </p>
       </div>
 
     </div>
@@ -272,37 +276,42 @@
 <!-- =================Observations================= -->
 <section id="observations" class="max-w-6xl mx-auto px-6 md:px-10 py-20">
   <p class="eyebrow text-teal mb-4 reveal">OBSERVATIONS</p>
-  <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal"> Observations and Data collections</h2>
- 
+  <h2 class="font-display text-3xl text-ink font-medium mb-10 reveal"> Observations and Data Reduction</h2>
+
   <div class="reveal">
     <!-- EDIT: square tabs — one per observatory. data-tab must match the panel's id suffix below -->
     <div class="flex flex-wrap gap-3 mb-8" id="obsTabs">
-      <button data-tab="GIT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink transition-colors bg-ink text-paper"> 70 cm GIT</button>
-      <button data-tab="HCT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">2.0 m HCT</button>
+      <button data-tab="HCT" class="obs-tab-btn px-7 py-4 rounded-md text-base font-semibold border border-ink transition-colors bg-ink text-paper ring-2 ring-amber ring-offset-2 ring-offset-paper"> 2.0 m HCT</button>
+      <button data-tab="GIT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">70 cm GIT</button>
       <button data-tab="DOT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">3.6 m DOT</button>
       <button data-tab="100C" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors"> 100C Altay </button>
       <button data-tab="LOT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">1.0 m LOT </button>
       <button data-tab="SLT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">40 cm SLT</button>
       <button data-tab="NTT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">3.58 m NTT</button>
       <button data-tab="VLT" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">VLT FORS2</button>
+      <button data-tab="xshoo" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors">VLT X-SHOOTER</button>
+      <button data-tab="Swift" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors"> Swift Observatory</button>
+      <button data-tab="ZTF" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors"> Palomar P48  </button>
+      <button data-tab="LSST" class="obs-tab-btn px-5 py-3 rounded-md text-sm font-medium border border-ink/15 text-ink/70 hover:border-ink/40 transition-colors"> Vera Rubin </button>
 
 
     </div>
  
     <!-- EDIT: panels — each just lists which data types you've collected there. Remove a badge if not applicable. -->
-    <div id="obs-GIT" class="obs-panel">
-      <div class="flex gap-2 mb-3">
-      <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
-      </div>
-       <a href="https://sites.google.com/view/growthindia/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
-    </div>
- 
-    <div id="obs-HCT" class="obs-panel hidden">
+    <div id="obs-HCT" class="obs-panel">
       <div class="flex gap-2 mb-3">
       <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
       <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Spectroscopy</span>
       </div>
-      <a href="https://www.iiap.res.in/centers/iao/facilities/hct/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+       <a href="https://www.iiap.res.in/centers/iao/facilities/hct/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+    <div id="obs-GIT" class="obs-panel hidden">
+      <div class="flex gap-2 mb-3">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
+      
+      </div>
+      <a href="https://sites.google.com/view/growthindia/" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
     </div>
 
     <div id="obs-DOT" class="obs-panel hidden">
@@ -350,6 +359,40 @@
       <a href="https://www.eso.org/sci/facilities/paranal/instruments/fors/overview.html" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
     </div>
 
+     <div id="obs-xshoo" class="obs-panel hidden">
+      <div class="flex gap-2 mb-3">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Spectroscopy</span>
+      </div>
+      <a href=" https://www.eso.org/sci/facilities/paranal/instruments/xshooter.html" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+    <div id="obs-Swift" class="obs-panel hidden">
+      <div class="flex gap-2 mb-3">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-teal/10 text-teal">Photometry</span>
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-violet">Spectroscopy</span>
+      </div>
+      <a href="https://swift.gsfc.nasa.gov" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+    <div id="obs-ZTF" class="obs-panel hidden">
+      <div class="flex gap-2 mb-3">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-teal">Photometry</span>
+      </div>
+      <a href="https://www.ztf.caltech.edu/ztf-camera.html" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+    <div id="obs-LSST" class="obs-panel hidden">
+      <div class="flex gap-2 mb-3">
+      <span class="px-3 py-1 rounded-md text-xs font-mono bg-violet/10 text-teal">Photometry</span>
+      </div>
+      <a href="https://rubinobservatory.org" target="_blank" rel="noopener" class="underline-grow text-xs font-mono text-ink/50">Visit site ↗</a>
+    </div>
+
+
+
+
+
+
 
   </div>
 </section>
@@ -376,6 +419,17 @@
         <p class="font-mono text-xs text-amber mb-2">ALERT BASED TOM TOOLKIT</p>
         <h3 class="font-display text-lg text-ink mb-2">lasair-lsst</h3>
         <p class="text-sm text-inksoft/80 leading-relaxed">Web tooling connecting the Lasair LSST alert broker to transient follow-up.</p>
+
+      <a href="#" class="reveal block bg-paper rounded-2xl p-6 hover:-translate-y-1 transition-transform">
+        <p class="font-mono text-xs text-ink mb-2"> GAUSSIAN PROCESS (Private Now)</p>
+        <h3 class="font-display text-lg text-ink mb-2">gp_fit</h3>
+        <p class="text-sm text-inksoft/80 leading-relaxed">Supernova Light Curve fitting with sklearn gaussian process.</p>
+      </a>
+
+      <a href="https://github.com/Knights-Templars/SNEXP" class="reveal block bg-paper rounded-2xl p-6 hover:-translate-y-1 transition-transform">
+        <p class="font-mono text-xs text-teal mb-2"> ANALYTICAL MODELS </p>
+        <h3 class="font-display text-lg text-ink mb-2">radiation_diffusion</h3>
+        <p class="text-sm text-inksoft/80 leading-relaxed">Radiation diffusion model for SN light curve fitting.</p>
       </a>
     </div>
   </div>
@@ -407,6 +461,11 @@
 <div class="spectrum-rule text-ink/15">
   <svg viewBox="0 0 1200 34" preserveAspectRatio="none">
     <line x1="0" y1="17" x2="1200" y2="17" stroke="currentColor" stroke-width="1"/>
+    <g stroke="currentColor" stroke-width="1">
+
+      <line x1="0" y1="8" x2="0" y2="26"/><line x1="20" y1="13" x2="20" y2="21"/><line x1="40" y1="13" x2="40" y2="21"/><line x1="60" y1="13" x2="60" y2="21"/><line x1="80" y1="13" x2="80" y2="21"/><line x1="100" y1="8" x2="100" y2="26"/><line x1="120" y1="13" x2="120" y2="21"/><line x1="140" y1="13" x2="140" y2="21"/><line x1="160" y1="13" x2="160" y2="21"/><line x1="180" y1="13" x2="180" y2="21"/><line x1="200" y1="8" x2="200" y2="26"/><line x1="220" y1="13" x2="220" y2="21"/><line x1="240" y1="13" x2="240" y2="21"/><line x1="260" y1="13" x2="260" y2="21"/><line x1="280" y1="13" x2="280" y2="21"/><line x1="300" y1="8" x2="300" y2="26"/><line x1="320" y1="13" x2="320" y2="21"/><line x1="340" y1="13" x2="340" y2="21"/><line x1="360" y1="13" x2="360" y2="21"/><line x1="380" y1="13" x2="380" y2="21"/><line x1="400" y1="8" x2="400" y2="26"/><line x1="420" y1="13" x2="420" y2="21"/><line x1="440" y1="13" x2="440" y2="21"/><line x1="460" y1="13" x2="460" y2="21"/><line x1="480" y1="13" x2="480" y2="21"/><line x1="500" y1="8" x2="500" y2="26"/><line x1="520" y1="13" x2="520" y2="21"/><line x1="540" y1="13" x2="540" y2="21"/><line x1="560" y1="13" x2="560" y2="21"/><line x1="580" y1="13" x2="580" y2="21"/><line x1="600" y1="8" x2="600" y2="26"/><line x1="620" y1="13" x2="620" y2="21"/><line x1="640" y1="13" x2="640" y2="21"/><line x1="660" y1="13" x2="660" y2="21"/><line x1="680" y1="13" x2="680" y2="21"/><line x1="700" y1="8" x2="700" y2="26"/><line x1="720" y1="13" x2="720" y2="21"/><line x1="740" y1="13" x2="740" y2="21"/><line x1="760" y1="13" x2="760" y2="21"/><line x1="780" y1="13" x2="780" y2="21"/><line x1="800" y1="8" x2="800" y2="26"/><line x1="820" y1="13" x2="820" y2="21"/><line x1="840" y1="13" x2="840" y2="21"/><line x1="860" y1="13" x2="860" y2="21"/><line x1="880" y1="13" x2="880" y2="21"/><line x1="900" y1="8" x2="900" y2="26"/><line x1="920" y1="13" x2="920" y2="21"/><line x1="940" y1="13" x2="940" y2="21"/><line x1="960" y1="13" x2="960" y2="21"/><line x1="980" y1="13" x2="980" y2="21"/><line x1="1000" y1="8" x2="1000" y2="26"/><line x1="1020" y1="13" x2="1020" y2="21"/><line x1="1040" y1="13" x2="1040" y2="21"/><line x1="1060" y1="13" x2="1060" y2="21"/><line x1="1080" y1="13" x2="1080" y2="21"/><line x1="1100" y1="8" x2="1100" y2="26"/><line x1="1120" y1="13" x2="1120" y2="21"/><line x1="1140" y1="13" x2="1140" y2="21"/><line x1="1160" y1="13" x2="1160" y2="21"/><line x1="1180" y1="13" x2="1180" y2="21"/><line x1="1200" y1="8" x2="1200" y2="26"/>
+
+    </g>
   </svg>
 </div>
 
@@ -417,7 +476,7 @@
       <h2 class="font-display text-2xl md:text-3xl font-medium mb-4">Reach out about collaborations, data, or code.</h2>
       <a href="mailto:you@university.edu" class="underline-grow text-lg">anirbaniamdutta@gmail.com</a>
     </div>
-      <p class="eyebrow text-paper/30 mt-10">© 2026 · BUILT WITH TAILWIND CSS</p>
+      <p class="eyebrow text-paper/30 mt-10">© Anirban Dutta 2026 · BUILT WITH TAILWIND CSS and CLAUDE</p>
     </div>
   </div>
 </footer>
